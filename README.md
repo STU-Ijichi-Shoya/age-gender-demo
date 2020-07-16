@@ -1,6 +1,6 @@
 # age-gender-predictor-demo
 ![](demo_movie.gif)
-## installtion
+## installation
 ### if you use conda
 * execute below command
 ```terminal
