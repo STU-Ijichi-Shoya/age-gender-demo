@@ -1,4 +1,4 @@
-# age-gender-demo
+# age-gender-predictor-demo
 
 ## installtion
 ### if you use conda
