@@ -17,5 +17,6 @@ pip install -r requirements.txt
 python3 video2rec.py
 ```
 ### if you want change video source
-please edit 36 line of video2rec.py 
-
+please change VIDEO_SOURCE constant of video2rec.py 
+if you use usb-video-cam: 0
+else if html video source of network cam or droid-cam: rtsp://~~ or http://~
