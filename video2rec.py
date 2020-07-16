@@ -1,15 +1,13 @@
 import cv2
 import predict
-casfile="haarcascade_frontalface_default.xml"
-
 
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
-
+VIDEO_SOURCE="http://192.168.0.14:4747/video"
 DNN_IMAGE_SIZE=(200,200)    
 dt=5
 ## Attenssion ##
 ## regression model only 
-## [gender-rate , age] scalar only
+## model.predict --> [gender-rate , age] scalar only
 predict.load_model("eff-im4_r_down-jpn-cn-limit-35-50.hdf5")
 def detect_draw(src):
     faces = face_cascade.detectMultiScale(src,minNeighbors=6)
@@ -27,13 +25,13 @@ def detect_draw(src):
     cv2.rectangle(src,(x,y),(x+w,y+h),color,2)
 
     # draw str
-    cv2.putText(src,"%s:%.1f%  %.1f"%(gender,genrate,age),(x,y-dt),cv2.FONT_HERSHEY_COMPLEX,1.0,color)
+    cv2.putText(src,"%s:%.1f age:%.1f"%(gender,genrate/100,age),(x,y-dt),cv2.FONT_HERSHEY_COMPLEX,1.0,color)
 
     return src
 
 def main():
     import sys
-    v=cv2.VideoCapture("http://192.168.0.14:4747/video")
+    v=cv2.VideoCapture(VIDEO_SOURCE)
     if not v.isOpened():
          print("er! can't open video",file=sys.stderr)
          return
