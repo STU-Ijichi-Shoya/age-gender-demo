@@ -9,7 +9,7 @@ conda activate demo_env
 ```
 ### else you use pure-python>=3.x
 ```terminal
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 ## how to use
