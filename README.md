@@ -1,7 +1,10 @@
 # age-gender-predictor-demo for JAPANESE
 ![](demo_movie.gif)  
 A girl in the picture is female, 20 years old.  
-this project can face detection and predict age and gender.
+this project can face detection and predict age and gender.  
+A prediction model can predict with very high accuracy.  
+if your face is in 68% of normal distribution, +- 5 years old.
+
 ## installation
 ### if you use conda
 * execute below command
