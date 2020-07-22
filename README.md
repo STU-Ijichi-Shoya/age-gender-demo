@@ -1,6 +1,6 @@
-# age-gender-predictor-demo
-![](demo_movie.gif)
-A girl in the picture is female, 20 years old.
+# age-gender-predictor-demo for JAPANESE
+![](demo_movie.gif)  
+A girl in the picture is female, 20 years old.  
 this project can face detection and predict age and gender.
 ## installation
 ### if you use conda
