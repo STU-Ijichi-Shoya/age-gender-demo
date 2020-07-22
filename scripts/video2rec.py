@@ -1,7 +1,7 @@
 import cv2
 import predict,detect
 
-0
+
 VIDEO_SOURCE="endou.mp4"
 DNN_IMAGE_SIZE=(200,200)    
 dt=5
