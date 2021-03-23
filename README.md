@@ -1,4 +1,5 @@
 # age-gender-predictor-demo for JAPANESE
+こちらは，伊地知翔也が作ったモデルとなります．詳しくは[こちら](http://idichi.tk/blog/losemicrosoft/)
 ![](demo_movie.gif)  
 A girl in the picture is female, 20 years old.  
 this project can face detection and predict age and gender.  
